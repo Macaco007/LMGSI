@@ -4,38 +4,57 @@
     <meta charset="UTF-8">
     <title>Horari</title>
     <style>
+        /* Títol principal */
+        h1 {
+            color: blue;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Taula */
         table {
             border-collapse: collapse;
             width: 80%;
             margin: auto;
             font-size: 1.1em;
-        }
-        th, td {
             border: 1px solid black;
-            text-align: center;
-            padding: 8px;
         }
+
+        /* Caption */
+        caption {
+            color: goldenrod;
+            font-size: 25px;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        /* Capçalera */
         th {
             background-color: #90ee90;
-        }
-        .titulo {
+            width: 100px;
             text-align: center;
-            color: blue;
-            font-size: 2.5em;
             font-weight: bold;
+            border: 1px solid black;
         }
-        .subtitulo {
+
+        /* Celes generals */
+        td {
+            border: 1px solid black;
             text-align: center;
-            color: goldenrod;
-            font-size: 2em;
-            margin-bottom: 20px;
+            padding: 6px;
+        }
+
+        /* Descans */
+        .descans {
+            text-align: left;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <div class="titulo">Horari</div>
-    <div class="subtitulo">Curs 25-26</div>
+    <h1>Horari</h1>
     <table>
+        <caption>Curs 24-25</caption>
         <tr>
             <th></th>
             <th>dilluns</th>
@@ -46,46 +65,46 @@
         </tr>
         <tr>
             <td>8:00 - 9:00</td>
-            <td>Programació + Entorns</td>
-            <td>ANG(GS)</td>
-            <td>TUT</td>
-            <td>IPOI</td>
-            <td>BD</td>
+            <td class="lmsgi">LMSGI</td>
+            <td class="bd">BD</td>
+            <td class="ped">P+ED</td>
+            <td class="si">SI</td>
+            <td class="bd">BD</td>
         </tr>
         <tr>
             <td>9:00 - 10:00</td>
-            <td>Programació + Entorns</td>
-            <td>SGE</td>
-            <td>Sistemes</td>
-            <td>BD</td>
-            <td>BD</td>
+            <td class="lmsgi">LMSGI</td>
+            <td class="bd">BD</td>
+            <td class="ped">P+ED</td>
+            <td class="si">SI</td>
+            <td class="bd">BD</td>
         </tr>
         <tr>
             <td>10:00 - 11:00</td>
-            <td>Sistemes</td>
-            <td>SGE</td>
-            <td>Sistemes</td>
-            <td>BD</td>
-            <td>AN(GS)</td>
+            <td class="ped">P+ED</td>
+            <td class="tut">TUT</td>
+            <td class="an">AN</td>
+            <td class="ped">P+ED</td>
+            <td class="ped">P+ED</td>
         </tr>
         <tr>
-            <td colspan="6" style="text-align:left;">Descans</td>
+            <td colspan="6" class="descans">Descans</td>
         </tr>
         <tr>
             <td>11:30 - 12:30</td>
-            <td>Marques</td>
-            <td>Programació + Entorns</td>
-            <td>IPOI</td>
-            <td>Programació + Entorns</td>
-            <td>Programació + Entorns</td>
+            <td class="ped">P+ED</td>
+            <td class="diw">DIW</td>
+            <td class="ipoi">IPOI</td>
+            <td class="ped">P+ED</td>
+            <td class="ped">P+ED</td>
         </tr>
         <tr>
             <td>12:30 - 13:30</td>
-            <td>Marques</td>
-            <td>Programació + Entorns</td>
-            <td>IPOI</td>
-            <td>Programació + Entorns</td>
-            <td>Programació + Entorns</td>
+            <td class="diw">DIW</td>
+            <td class="ipoi">IPOI</td>
+            <td class="ipoi">IPOI</td>
+            <td class="ped">P+ED</td>
+            <td class="si">SI</td>
         </tr>
     </table>
 </body>

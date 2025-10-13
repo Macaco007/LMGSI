@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Horari</title>
+    <style>
+        body {
+            font-family: Verdana;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #90ee90;
+            font-size: 25px;
+            padding: 30px;
+        }
+
+        .titulo {
+            text-align: center;
+            color: blue;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .subtitulo {
+            text-align: center;
+            color: goldenrod;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        /* Clase para las horas */
+        .hores {
+            font-size: 20px;
+            padding: 10px;
+            width: 180px;
+        }
+
+        /* Identificador para el descans */
+        #descans {
+            font-size: 20px;
+            padding: 15px;
+            background-color: #f5f5f5;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Colores por módulo (clases) */
+        .P_ED { background-color: #6da6a6; }
+        .IPOI { background-color: #d94f5c; }
+        .BD { background-color: #fff1c1; }
+        .SGE { background-color: #f7c6c7; }
+        .Sistemes { background-color: #a0b4ff; }
+        .ANG { background-color: #ffd42a; }
+        .AN { background-color: #ffd42a; }
+        .Marques { background-color: #ff9966; }
+        .TUT { background-color: #ccccff; }
+    </style>
+</head>
+<body>
+    <div class="titulo">Horari</div>
+    <div class="subtitulo">Curs 25-26</div>
+
+    <table>
+        <tr>
+            <th></th>
+            <th>dilluns</th>
+            <th>dimarts</th>
+            <th>dimecres</th>
+            <th>dijous</th>
+            <th>divendres</th>
+        </tr>
+
+        <tr>
+            <td class="hores">8:00 - 9:00</td>
+            <td class="P_ED" rowspan="2">Programació + Entorns</td>
+            <td class="ANG">ANG(GS)</td>
+            <td class="TUT">TUT</td>
+            <td class="IPOI" rowspan="2">IPOI</td>
+            <td class="BD" rowspan="2">BD</td>
+        </tr>
+
+        <tr>
+            <td class="hores">9:00 - 10:00</td>
+            <td class="SGE" rowspan="2">SGE</td>
+            <td class="Sistemes" rowspan="2">Sistemes</td>
+        </tr>
+
+        <tr>
+            <td class="hores">10:00 - 11:00</td>
+            <td class="Sistemes">Sistemes</td>
+            <td class="BD">BD</td>
+            <td class="AN">AN(GS)</td>
+        </tr>
+
+        <tr>
+            <td id="descans" colspan="6">Descans</td>
+        </tr>
+
+        <tr>
+            <td class="hores">11:30 - 12:30</td>
+            <td class="Marques" rowspan="2">Marques</td>
+            <td class="P_ED" rowspan="2">Programació + Entorns</td>
+            <td class="IPOI" rowspan="2">IPOI</td>
+            <td class="P_ED" rowspan="2">Programació + Entorns</td>
+            <td class="P_ED" rowspan="2">Programació + Entorns</td>
+        </tr>
+
+        <tr>
+            <td class="hores">12:30 - 13:30</td>
+        </tr>
+    </table>
+</body>
+</html>

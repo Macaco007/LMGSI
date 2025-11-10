@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinió sobre Videojocs</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; }
+        form { background: #f9f9f9; padding: 20px; border-radius: 8px; }
+        label { display: block; margin-top: 10px; font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; }
+        input[type="submit"] { background: #007bff; color: white; border: none; padding: 10px; cursor: pointer; margin-top: 20px; }
+        fieldset { border: 1px solid #ddd; padding: 10px; margin-top: 15px; }
+    </style>
+</head>
+<body>
+    <h1>Què en penses dels videojocs?</h1>
+    <p>Comparteix la teva opinió sobre els teus videojocs preferits.</p>
+    
+    <form action="videojocs_enviat.html" method="get">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required>
+        
+        <label for="email">Correu electrònic:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="edat">Edat (número):</label>
+        <input type="number" id="edat" name="edat" min="10" max="100" required>
+        
+        <label for="interes">Quant t’agraden els videojocs?</label>
+        <select id="interes" name="interes" required>
+            <option value="">Selecciona una opció</option>
+            <option value="molt">Molt</option>
+            <option value="bastant">Bastant</option>
+            <option value="poc">Poc</option>
+        </select>
+        
+        <fieldset>
+            <legend>Quins gèneres prefereixes? (selecciona'n almenys un)</legend>
+            <label><input type="checkbox" name="generes[]" value="accio" checked> Acció</label>
+            <label><input type="checkbox" name="generes[]" value="aventura"> Aventura</label>
+            <label><input type="checkbox" name="generes[]" value="rol"> Rol (RPG)</label>
+            <label><input type="checkbox" name="generes[]" value="estrategia"> Estratègia</label>
+            <label><input type="checkbox" name="generes[]" value="esports"> Esports</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Com valores el teu videojoc preferit?</legend>
+            <label><input type="radio" name="valoracio" value="excelent" checked> Excel·lent</label>
+            <label><input type="radio" name="valoracio" value="bo"> Bo</label>
+            <label><input type="radio" name="valoracio" value="millorable"> Millorable</label>
+        </fieldset>
+        
+        <label for="comentari">Comentaris addicionals (explica per què t’agrada o què milloraries):</label>
+        <textarea id="comentari" name="comentari" rows="4" placeholder="Escriu aquí la teva opinió sobre videojocs..." required></textarea>
+        
+        <input type="submit" value="Envia la teva opinió">
+    </form>
+</body>
+</html>

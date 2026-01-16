@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cataleg_musica SYSTEM "cataleg_musica.dtd">
+<cataleg_musica>
+    <llista_artistes>
+        <artista id="A1">
+            <nom>Queen</nom>
+            <pais>UK</pais>
+            <genere>Rock</genere>
+        </artista>
+        <artista id="A2">
+            <nom>Michael Jackson</nom>
+            <pais>USA</pais>
+        </artista>
+        <artista id="A3">
+            <nom>Metallica</nom>
+            <genere>Metal</genere>
+        </artista>
+    </llista_artistes>
+    
+    <llista_albumes>
+        <album id="ALB1">
+            <titol>Bohemian Rhapsody</titol>
+            <any>1975</any>
+            <artistes>
+                <artista_ref ref="A1"/>
+            </artistes>
+        </album>
+        <album id="ALB2">
+            <titol>Thriller</titol>
+            <any>1982</any>
+            <artistes>
+                <artista_ref ref="A2"/>
+            </artistes>
+        </album>
+        <album id="ALB3">
+            <titol>Master of Puppets</titol>
+            <any>1986</any>
+            <artistes>
+                <artista_ref ref="A3"/>
+            </artistes>
+        </album>
+    </llista_albumes>
+    
+    <llista_recomanacions_albumes>
+        <recomanacio ref="ALB1"/>
+        <recomanacio ref="ALB2"/>
+    </llista_recomanacions_albumes>
+</cataleg_musica>

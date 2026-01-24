@@ -1,0 +1,70 @@
+{
+  "llista_pokemons": [
+    {
+      "id": 4,
+      "nom": "Charmander",
+      "tipus": [
+        "Fuego"
+      ],
+      "pes": "8.5 kg",
+      "altura": "0.6 m",
+      "estadistiques": {
+        "velocitat": 3,
+        "fortalesa": 3,
+        "precisio": 3,
+        "resistencia": 3
+      },
+      "moviments": [
+        {
+          "nom": "Arañazo",
+          "descripcio": "Ataca al enemigo con garras afiladas.",
+          "potencia": 40,
+          "contacte": true
+        },
+        {
+          "nom": "Ascuas",
+          "descripcio": "Ataca con pequeñas llamas que pueden quemar.",
+          "potencia": 40,
+          "contacte": false
+        }
+      ],
+      "imatge": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png",
+      "evolucions": [
+        {
+          "id_pokemon": 5,
+          "nivell": 16
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nom": "Charmeleon",
+      "tipus": [
+        "Fuego"
+      ],
+      "pes": "19.0 kg",
+      "altura": "1.1 m",
+      "estadistiques": {
+        "velocitat": 4,
+        "fortalesa": 4,
+        "precisio": 4,
+        "resistencia": 4
+      },
+      "moviments": [
+        {
+          "nom": "Lanzallamas",
+          "descripcio": "Un potente ataque de fuego que abrasa al objetivo.",
+          "potencia": 90,
+          "contacte": false
+        }
+      ],
+      "imatge": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png",
+      "evolucions": [
+        {
+          "id_pokemon": 6,
+          "nivell": 36
+        }
+      ]
+    }
+  ]
+}

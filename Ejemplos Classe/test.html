@@ -1,0 +1,29 @@
+<html>
+    <head></head>
+    <body>
+        <input id="introDades">
+        <button onclick="Convertir()">Convertir a Mayúsculas</button>
+        <textarea id="resultat"></textarea>
+        <script>
+            //aqui el nostre codi
+            //declarar variavle i buscar el DOM
+            let inputElement = document.getElementById("introDades");
+            let areaResultat = document.getElementById("resultat");
+            /*string*/let parragrafString = document.getElementById("parrafit");
+            /*direccio a l'elemen*/let parragraf = document.getElementById("parragraf");
+            //funcio convertir()
+            function Convertir(){
+                areaResultat.value = inputElement.value.toUpperCase();
+            }
+            function modifyP()
+            {
+                 //parragraf.innerHTML = '<div>adeu</div>';
+                parragraf.textContent = '<div>adeu</div>';   
+                parragraf = "adeu"; 
+                 console.log(parragrafString);
+            }
+            
+
+        </script>
+    </body>
+</html>

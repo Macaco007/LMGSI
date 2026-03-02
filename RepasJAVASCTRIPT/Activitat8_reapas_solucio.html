@@ -1,0 +1,28 @@
+<html>
+    <head></head>
+    <body>
+        <input id="text" placeholder="Nou element">
+        <button onclick="afegir()">Afegir</button>
+
+        <ul id="llista"></ul>
+
+        <script>
+            // Aquí el nostre codi
+            // Afegirem elements a una llista (<ul>) creant <li> amb JavaScript
+
+            let input = document.getElementById("text");
+            let llista = document.getElementById("llista");
+
+            function afegir()
+            {
+                let li = document.createElement("li");
+                li.textContent = input.value;
+
+                llista.appendChild(li);
+
+                input.value = "";
+                input.focus();
+            }
+        </script>
+    </body>
+</html>

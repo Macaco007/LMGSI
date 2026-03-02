@@ -1,0 +1,23 @@
+<html>
+    <head></head>
+    <body>
+        <p id="missatge">Missatge secret</p>
+        <button onclick="toggle()">Mostrar / Amagar</button>
+
+        <script>
+            // Aquí el nostre codi
+            // Farem un "toggle" per mostrar o amagar un element
+
+            let missatge = document.getElementById("missatge");
+
+            function toggle()
+            {
+                if (missatge.style.display == "none") {
+                    missatge.style.display = "block";
+                } else {
+                    missatge.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>

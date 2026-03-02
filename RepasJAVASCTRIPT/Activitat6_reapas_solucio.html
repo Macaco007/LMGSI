@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+        <p id="text">Hola alumnes</p>
+        <button onclick="canviaColor()">Canviar color</button>
+
+        <script>
+            // Aquí el nostre codi
+            // Canviarem el color del text amb JavaScript
+
+            let text = document.getElementById("text");
+            let esVermell = false;
+
+            function canviaColor()
+            {
+                // Alternem entre vermell i negre per veure el canvi clarament
+                if (esVermell) {
+                    text.style.color = "black";
+                } else {
+                    text.style.color = "red";
+                }
+                esVermell = !esVermell;
+            }
+        </script>
+    </body>
+</html>

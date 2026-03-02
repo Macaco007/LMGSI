@@ -1,0 +1,27 @@
+<html>
+    <head></head>
+    <body>
+        <input id="num" placeholder="Escriu un número">
+        <button onclick="comprova()">Comprovar</button>
+        <p id="resultat">Resultat</p>
+
+        <script>
+            // Aquí el nostre codi
+            // Direm si el número és parell o imparell
+
+            let input = document.getElementById("num");
+            let resultat = document.getElementById("resultat");
+
+            function comprova()
+            {
+                let num = Number(input.value);
+
+                if (num % 2 == 0) {
+                    resultat.textContent = "Parell";
+                } else {
+                    resultat.textContent = "Imparell";
+                }
+            }
+        </script>
+    </body>
+</html>

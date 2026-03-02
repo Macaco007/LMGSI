@@ -1,0 +1,28 @@
+<html>
+    <head></head>
+    <body>
+        <p id="contador">0</p>
+        <button onclick="sumar()">+1</button>
+        <button onclick="reset()">Reset</button>
+
+        <script>
+            // Aquí el nostre codi
+            // Farem un comptador que augmenta cada cop que fem clic.
+
+            let valor = 0;
+            let contador = document.getElementById("contador");
+
+            function sumar()
+            {
+                valor++;
+                contador.textContent = valor;
+            }
+
+            function reset()
+            {
+                valor = 0;
+                contador.textContent = valor;
+            }
+        </script>
+    </body>
+</html>

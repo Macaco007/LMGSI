@@ -1,0 +1,19 @@
+<html>
+    <head></head>
+    <body>
+        <input id="input">
+        
+        <button onclick="converteix()">Convertir a mayusculas</button>
+        <p id="resultat">Resultat</p>
+
+        <script>
+            // Aquí el nostre codi
+            let input = document.getElementById("input");
+            let resultat = document.getElementById("resultat");
+            function converteix(){
+                resultat.textContent = input.value.toUpperCase();
+            }
+           
+        </script>
+    </body>
+</html>
